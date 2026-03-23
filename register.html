@@ -1,0 +1,142 @@
+<!--1. Setting a fixed footer or sticky footer: https://www.youtube.com/watch?v=ffb34dCmMVQ
+    2. Responsive Navbar: https://getbootstrap.com/docs/5.3/components/navbar/#offcanvas
+    3. Carousel: https://getbootstrap.com/docs/5.3/components/carousel/#how-it-works
+    -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width initial-scale-1">
+
+  <meta name="description" content="Divcover a wide selection of books at JJ's Pages & Vibes">
+
+  <meta name="keywords" content="JJ's Pages & Vibes, bookstore, bookshop, book services">
+  
+  <!-- Link the necessary Bootstrap CSS files -->
+   <link rel="stylesheet" href="css/styles.css">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="assets/css/all.css" />
+
+   <style>
+    .carousel-item{
+        height: 500px;
+        width: 100%;
+        object-fit: contain;
+        border-radius: 10px;
+    }
+   </style>
+
+  <title>JJ's Pages & Vibes</title>
+</head>
+
+<body class="register-bg">
+    <nav class="navbar navbar-expand-lg pnav">
+  <div class="container-fluid">
+
+    <a class="navbar-brand" href="index.html">
+        <img src="images/home/logo.png" class="logosize" alt="JJ's Pages & Vibes logo">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="books.html">Books</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="services.html">Services</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="order.html">Place Order</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="register.html">Register/Login</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </form>
+    </div>
+  </div>
+</nav> <!--End Primary Nav-->
+
+<div class="container mt-5">
+
+<h2 class="text-center page-header">Create an Account</h2>
+
+<div class="row justify-content-center mt-4">
+
+<div class="col-sm-6">
+
+<form>
+
+<div class="mb-3">
+<label>Full Name</label>
+<input type="text" class="form-control" placeholder="Enter your name">
+</div>
+
+<div class="mb-3">
+<label>Email</label>
+<input type="email" class="form-control" placeholder="Enter your email">
+</div>
+
+<div class="mb-3">
+<label>Password</label>
+<input type="password" class="form-control" placeholder="Create password">
+</div>
+
+<div class="mb-3">
+<label>Confirm Password</label>
+<input type="password" class="form-control" placeholder="Confirm password">
+</div>
+
+<button type="submit" class="btn btn-success w-100">Register</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+ <div class="spcr3"></div>
+
+   <div class="row fbg2 text-center"> <!--website copyright info-->
+    <div class="col-sm-12">
+      <div>
+        &copy; 2026 JJ's Pages & Vibes Ltd. <br>
+        Website Created and Maintained by: Jamila Ali <br>
+        All Rights Reserved.
+      </div>
+
+    </div>
+   </div>
+
+   </div>
+
+   <!-- Provide the links to the JS files --> 
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

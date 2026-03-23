@@ -1,0 +1,497 @@
+<!--1. Setting a fixed footer or sticky footer: https://www.youtube.com/watch?v=ffb34dCmMVQ
+    2. Responsive Navbar: https://getbootstrap.com/docs/5.3/components/navbar/#offcanvas
+    3. Carousel: https://getbootstrap.com/docs/5.3/components/carousel/#how-it-works
+    -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width initital-scale-1">
+
+  <meta name="description" content="Divcover a wide selection of books at JJ's Pages & Vibes">
+
+  <meta name="keywords" content="JJ's Pages & Vibes, bookstore, bookshop, book services">
+  
+  <!-- Link the necessary Bootstrap CSS files -->
+   <link rel="stylesheet" href="css/styles.css">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="assets/css/all.css" />
+
+   <style>
+    .carousel-item{
+        height: 500px;
+        width: 100%;
+        object-fit: contain;
+        border-radius: 10px;
+    }
+   </style>
+
+  <title>JJ's Pages & Vibes</title>
+</head>
+
+<body class="book-bg">
+    <nav class="navbar navbar-expand-lg pnav">
+  <div class="container-fluid">
+
+    <a class="navbar-brand" href="index.html">
+        <img src="images/home/logo.png" class="logosize" alt="JJ's Pages & Vibes logo">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="books.html">Books</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="services.html">Services</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="order.html">Place Order</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="register.html">Register/Login</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </form>
+    </div>
+  </div>
+</nav> <!--End Primary Nav-->
+
+   <h2 class="text-center page-header">Book Categories</h2>
+
+   <ul class="bookcategories">
+     <li><a href="#romance">Romance</a></li>
+     <li><a href="#mystery">Mystery</a></li>
+     <li><a href="#fiction">Fiction</a></li>
+     <li><a href="#nonfiction">Non-Fiction</a></li>
+     <li><a href="#thriller">Thriller</a></li>
+     <li><a href="#horror">Horror</a></li>
+     <li><a href="#scifi">Sci-Fi</a></li>
+     <li><a href="#youngadult">Young Adult</a></li>
+     <li><a href="#fantasy">Fantasy</a></li>
+     <li><a href="#crime">Crime/Detective</a></li>
+   </ul>
+
+   <h2 id="romance">Romance Books</h2>
+   
+   <!-- Top Row: 3 Books -->
+<div class="row text-center mb-4">
+    <div class="col-sm-4">
+        <img src="images/bookcategories/romance1.jpg" class="bcimg img-fluid">
+        <div class="bpcap">Twisted Love - <span class="bpamt">$115.00</span></div>
+    </div>
+
+    <div class="col-sm-4">
+        <img src="images/bookcategories/romance2.jpg" class="bcimg img-fluid">
+        <div class="bpcap">Falling - <span class="bpamt">$205.00</span></div>
+    </div>
+
+    <div class="col-sm-4">
+        <img src="images/bookcategories/romance3.jpg" class="bcimg img-fluid">
+        <div class="bpcap">Daydream - <span class="bpamt">$215.00</span></div>
+    </div>
+</div>
+
+<!-- Bottom Row: 3 Books -->
+<div class="row text-center mb-5">
+    <div class="col-sm-4">
+        <img src="images/bookcategories/romance4.jpg" class="bcimg img-fluid">
+        <div class="bpcap">Better Than The Movies - <span class="bpamt">$166.00</span></div>
+    </div>
+
+    <div class="col-sm-4">
+        <img src="images/bookcategories/romance5.jpg" class="bcimg img-fluid">
+        <div class="bpcap">Things We Never Got Over - <span class="bpamt">$237.00</span></div>
+    </div>
+
+    <div class="col-sm-4">
+        <img src="images/bookcategories/romance6.jpg" class="bcimg img-fluid">
+        <div class="bpcap">It Ends With Us - <span class="bpamt">$211.00</span></div>
+    </div>
+</div>
+
+   <h2 id="mystery">Mystery Books</h2>
+
+   <!-- Top Row: 3 Books -->
+<div class="row text-center mb-4">
+    <div class="col-sm-4">
+        <img src="images/bookcategories/mystery1.jpg" class="bcimg img-fluid">
+        <div class="bpcap">And Then There Were None - <span class="bpamt">$115.00</span></div>
+    </div>
+
+    <div class="col-sm-4">
+        <img src="images/bookcategories/mystery2.jpg" class="bcimg img-fluid">
+        <div class="bpcap">Murder On The Orient Express - <span class="bpamt">$286.00</span></div>
+    </div>
+
+    <div class="col-sm-4">
+        <img src="images/bookcategories/mystery3.jpg" class="bcimg img-fluid">
+        <div class="bpcap">The Hound Of The Baskervilles - <span class="bpamt">$312.00</span></div>
+    </div>
+</div>
+
+<!-- Bottom Row: 3 Books -->
+<div class="row text-center mb-5">
+    <div class="col-sm-4">
+        <img src="images/bookcategories/mystery4.jpg" class="bcimg img-fluid">
+        <div class="bpcap">The Woman In The Window - <span class="bpamt">$169.00</span></div>
+    </div>
+
+    <div class="col-sm-4">
+        <img src="images/bookcategories/mystery5.jpg" class="bcimg img-fluid">
+        <div class="bpcap">The Cuckoo's Calling - <span class="bpamt">$237.00</span></div>
+    </div>
+
+    <div class="col-sm-4">
+        <img src="images/bookcategories/mystery6.jpg" class="bcimg img-fluid">
+        <div class="bpcap">The 7 1/2 Death Of Evelyn Hardcastle - <span class="bpamt">$235.00</span></div>
+    </div>
+</div>
+
+<h2 id="fiction">Fiction Books</h2>
+
+<!-- Top Row: 3 Books -->
+<div class="row text-center mb-4">
+    <div class="col-sm-4">
+        <img src="images/bookcategories/fiction1.jpg" class="bcimg img-fluid">
+        <div class="bpcap">To Kill A MockingBird - <span class="bpamt">$198.00</span></div>
+    </div>
+
+    <div class="col-sm-4">
+        <img src="images/bookcategories/fiction2.jpg" class="bcimg img-fluid">
+        <div class="bpcap">The Great Gatsby - <span class="bpamt">$209.00</span></div>
+    </div>
+
+    <div class="col-sm-4">
+        <img src="images/bookcategories/fiction3.jpg" class="bcimg img-fluid">
+        <div class="bpcap">1984 - <span class="bpamt">$243.00</span></div>
+    </div>
+</div>
+
+<!-- Bottom Row: 3 Books -->
+<div class="row text-center mb-5">
+    <div class="col-sm-4">
+        <img src="images/bookcategories/fiction4.jpg" class="bcimg img-fluid">
+        <div class="bpcap">The Catcher In The Rye - <span class="bpamt">$312.00</span></div>
+    </div>
+
+    <div class="col-sm-4">
+        <img src="images/bookcategories/fiction5.jpg" class="bcimg img-fluid">
+        <div class="bpcap">The Kite Runner - <span class="bpamt">$243.00</span></div>
+    </div>
+
+    <div class="col-sm-4">
+        <img src="images/bookcategories/fiction6.jpg" class="bcimg img-fluid">
+        <div class="bpcap">Litte Fires Everwhere - <span class="bpamt">$211.00</span></div>
+    </div>
+</div>
+
+<h2 id="nonfiction">Non-Fiction Books</h2>
+
+<!-- Top Row: 3 Books -->
+<div class="row text-center mb-4">
+    <div class="col-sm-4">
+        <img src="images/bookcategories/nonfiction1.jpg" class="bcimg img-fluid">
+        <div class="bpcap">Becoming - <span class="bpamt">$115.00</span></div>
+    </div>
+
+    <div class="col-sm-4">
+        <img src="images/bookcategories/nonfiction2.jpg" class="bcimg img-fluid">
+        <div class="bpcap">Educated - <span class="bpamt">$216.00</span></div>
+    </div>
+
+    <div class="col-sm-4">
+        <img src="images/bookcategories/nonfiction3.jpg" class="bcimg img-fluid">
+        <div class="bpcap">Sapiens - <span class="bpamt">$215.00</span></div>
+    </div>
+</div>
+
+<!-- Bottom Row: 3 Books -->
+<div class="row text-center mb-5">
+    <div class="col-sm-4">
+        <img src="images/bookcategories/nonfiction4.jpg" class="bcimg img-fluid">
+        <div class="bpcap">The Dairy Of A Young Girl - <span class="bpamt">$108.00</span></div>
+    </div>
+
+    <div class="col-sm-4">
+        <img src="images/bookcategories/nonfiction5.jpg" class="bcimg img-fluid">
+        <div class="bpcap">Unbroken - <span class="bpamt">$305.00</span></div>
+    </div>
+
+    <div class="col-sm-4">
+        <img src="images/bookcategories/nonfiction6.jpg" class="bcimg img-fluid">
+        <div class="bpcap">Thinking, Slow And Fast - <span class="bpamt">$218.00</span></div>
+    </div>
+</div>
+
+<h2 id="thriller">Thriller Books</h2>
+
+<!-- Top Row: 3 Books -->
+<div class="row text-center mb-4">
+    <div class="col-sm-4">
+        <img src="images/bookcategories/thriller1.jpg" class="bcimg img-fluid">
+        <div class="bpcap">Gone Girl - <span class="bpamt">$312.00</span></div>
+    </div>
+
+    <div class="col-sm-4">
+        <img src="images/bookcategories/thriller2.jpg" class="bcimg img-fluid">
+        <div class="bpcap">The Girl On The Train - <span class="bpamt">$283.00</span></div>
+    </div>
+
+    <div class="col-sm-4">
+        <img src="images/bookcategories/thriller3.jpg" class="bcimg img-fluid">
+        <div class="bpcap">Silent Patient - <span class="bpamt">$316.00</span></div>
+    </div>
+</div>
+
+<!-- Bottom Row: 3 Books -->
+<div class="row text-center mb-5">
+    <div class="col-sm-4">
+        <img src="images/bookcategories/thriller4.jpg" class="bcimg img-fluid">
+        <div class="bpcap">Before I Go To Sleep - <span class="bpamt">$198.00</span></div>
+    </div>
+
+    <div class="col-sm-4">
+        <img src="images/bookcategories/thriller5.jpg" class="bcimg img-fluid">
+        <div class="bpcap">Shutter Island - <span class="bpamt">$220.00</span></div>
+    </div>
+
+    <div class="col-sm-4">
+        <img src="images/bookcategories/thriller6.jpg" class="bcimg img-fluid">
+        <div class="bpcap">The Da Vinci Code - <span class="bpamt">$267.00</span></div>
+    </div>
+</div>
+
+<h2 id="horror">Horror Books</h2>
+
+<!-- Top Row: 3 Books -->
+<div class="row text-center mb-4">
+    <div class="col-sm-4">
+        <img src="images/bookcategories/horror1.jpg" class="bcimg img-fluid">
+        <div class="bpcap">IT - <span class="bpamt">$174.00</span></div>
+    </div>
+
+    <div class="col-sm-4">
+        <img src="images/bookcategories/horror2.jpg" class="bcimg img-fluid">
+        <div class="bpcap">The Shining - <span class="bpamt">$260.00</span></div>
+    </div>
+
+    <div class="col-sm-4">
+        <img src="images/bookcategories/horror3.jpg" class="bcimg img-fluid">
+        <div class="bpcap">Dracula - <span class="bpamt">$255.00</span></div>
+    </div>
+</div>
+
+<!-- Bottom Row: 3 Books -->
+<div class="row text-center mb-5">
+    <div class="col-sm-4">
+        <img src="images/bookcategories/horror4.jpg" class="bcimg img-fluid">
+        <div class="bpcap">Bird Box - <span class="bpamt">$160.00</span></div>
+    </div>
+
+    <div class="col-sm-4">
+        <img src="images/bookcategories/horror5.jpg" class="bcimg img-fluid">
+        <div class="bpcap">Pet Sematary - <span class="bpamt">$230.00</span></div>
+    </div>
+
+    <div class="col-sm-4">
+        <img src="images/bookcategories/horror6.jpg" class="bcimg img-fluid">
+        <div class="bpcap">House Of Leaves - <span class="bpamt">$225.00</span></div>
+    </div>
+</div>
+
+<h2 id="scifi">Sci-Fi Books</h2>
+
+<!-- Top Row: 3 Books -->
+<div class="row text-center mb-4">
+    <div class="col-sm-4">
+        <img src="images/bookcategories/scifi1.jpg" class="bcimg img-fluid">
+        <div class="bpcap">Dune - <span class="bpamt">$115.00</span></div>
+    </div>
+
+    <div class="col-sm-4">
+        <img src="images/bookcategories/scifi2.jpg" class="bcimg img-fluid">
+        <div class="bpcap">Ender's Game - <span class="bpamt">$210.00</span></div>
+    </div>
+
+    <div class="col-sm-4">
+        <img src="images/bookcategories/scifi3.jpg" class="bcimg img-fluid">
+        <div class="bpcap">Ready Player One - <span class="bpamt">$180.00</span></div>
+    </div>
+</div>
+
+<!-- Bottom Row: 3 Books -->
+<div class="row text-center mb-5">
+    <div class="col-sm-4">
+        <img src="images/bookcategories/scifi4.jpg" class="bcimg img-fluid">
+        <div class="bpcap">The Martian - <span class="bpamt">85.00</span></div>
+    </div>
+
+    <div class="col-sm-4">
+        <img src="images/bookcategories/scifi5.jpg" class="bcimg img-fluid">
+        <div class="bpcap">Neuromancer - <span class="bpamt">$355.00</span></div>
+    </div>
+
+    <div class="col-sm-4">
+        <img src="images/bookcategories/scifi6.jpg" class="bcimg img-fluid">
+        <div class="bpcap">Snow Crash - <span class="bpamt">$322.00</span></div>
+    </div>
+</div>
+
+<h2 id="youngadult">Young Adult Books</h2>
+
+<!-- Top Row: 3 Books -->
+<div class="row text-center mb-4">
+    <div class="col-sm-4">
+        <img src="images/bookcategories/youngadult1.jpg" class="bcimg img-fluid">
+        <div class="bpcap">The Hunger Games - <span class="bpamt">$145.00</span></div>
+    </div>
+
+    <div class="col-sm-4">
+        <img src="images/bookcategories/youngadult2.jpg" class="bcimg img-fluid">
+        <div class="bpcap">Harry Potter And The Sorcerer's Stone - <span class="bpamt">$318.00</span></div>
+    </div>
+
+    <div class="col-sm-4">
+        <img src="images/bookcategories/youngadult3.jpg" class="bcimg img-fluid">
+        <div class="bpcap">The Fault In Our Stars - <span class="bpamt">$364.00</span></div>
+    </div>
+</div>
+
+<!-- Bottom Row: 3 Books -->
+<div class="row text-center mb-5">
+    <div class="col-sm-4">
+        <img src="images/bookcategories/youngadult4.jpg" class="bcimg img-fluid">
+        <div class="bpcap">Divergent - <span class="bpamt">$366.00</span></div>
+    </div>
+
+    <div class="col-sm-4">
+        <img src="images/bookcategories/youngadult5.jpg" class="bcimg img-fluid">
+        <div class="bpcap">Percy Jackson And The  Olympians - <span class="bpamt">$338.00</span></div>
+    </div>
+
+    <div class="col-sm-4">
+        <img src="images/bookcategories/youngadult6.jpg" class="bcimg img-fluid">
+        <div class="bpcap">Looking For Alaska - <span class="bpamt">$280.00</span></div>
+    </div>
+</div>
+
+<h2 id="fantasy">Fantasy Books</h2>
+
+<!-- Top Row: 3 Books -->
+<div class="row text-center mb-4">
+    <div class="col-sm-4">
+        <img src="images/bookcategories/fantasy1.jpg" class="bcimg img-fluid">
+        <div class="bpcap">The Felloowship Of The Ring - <span class="bpamt">$311.00</span></div>
+    </div>
+
+    <div class="col-sm-4">
+        <img src="images/bookcategories/fantasy2.jpg" class="bcimg img-fluid">
+        <div class="bpcap">A Game Of Thrones - <span class="bpamt">$205.00</span></div>
+    </div>
+
+    <div class="col-sm-4">
+        <img src="images/bookcategories/fantasy3.jpg" class="bcimg img-fluid">
+        <div class="bpcap">The Name Of The Wind - <span class="bpamt">$310.00</span></div>
+    </div>
+</div>
+
+<!-- Bottom Row: 3 Books -->
+<div class="row text-center mb-5">
+    <div class="col-sm-4">
+        <img src="images/bookcategories/fantasy4.jpg" class="bcimg img-fluid">
+        <div class="bpcap">The Hobbit - <span class="bpamt">$305.00</span></div>
+    </div>
+
+    <div class="col-sm-4">
+        <img src="images/bookcategories/fantasy5.jpg" class="bcimg img-fluid">
+        <div class="bpcap">Harry Potter And The Philosopher's Stone - <span class="bpamt">$318.00</span></div>
+    </div>
+
+    <div class="col-sm-4">
+        <img src="images/bookcategories/fantasy6.jpg" class="bcimg img-fluid">
+        <div class="bpcap">Mistborn - <span class="bpamt">$345.00</span></div>
+    </div>
+</div>
+
+<h2 id="crime">Crime/Detective Books</h2>
+
+<!-- Top Row: 3 Books -->
+<div class="row text-center mb-4">
+    <div class="col-sm-4">
+        <img src="images/bookcategories/crime1.jpg" class="bcimg img-fluid">
+        <div class="bpcap">The Girl With The Dragon Tattoo - <span class="bpamt">$362.00</span></div>
+    </div>
+
+    <div class="col-sm-4">
+        <img src="images/bookcategories/crime2.jpg" class="bcimg img-fluid">
+        <div class="bpcap">In The Woods - <span class="bpamt">$255.00</span></div>
+    </div>
+
+    <div class="col-sm-4">
+        <img src="images/bookcategories/crime3.jpg" class="bcimg img-fluid">
+        <div class="bpcap">The Reversal - <span class="bpamt">$372.00</span></div>
+    </div>
+</div>
+
+<!-- Bottom Row: 3 Books -->
+<div class="row text-center mb-5">
+    <div class="col-sm-4">
+        <img src="images/bookcategories/crime4.jpg" class="bcimg img-fluid">
+        <div class="bpcap">Big Little Lies - <span class="bpamt">$188.00</span></div>
+    </div>
+
+    <div class="col-sm-4">
+        <img src="images/bookcategories/crime5.jpg" class="bcimg img-fluid">
+        <div class="bpcap">The Lincoln Lawyer - <span class="bpamt">$392.00</span></div>
+    </div>
+
+    <div class="col-sm-4">
+        <img src="images/bookcategories/crime6.jpg" class="bcimg img-fluid">
+        <div class="bpcap">Murder In The Family - <span class="bpamt">$331.00</span></div>
+    </div>
+</div>
+
+   <a href="#top">Back to Top</a>
+   
+   <div class="row fbg2 text-center"> <!--website copyright info-->
+    <div class="col-sm-12">
+      <div>
+        &copy; 2026 JJ's Pages & Vibes Ltd. <br>
+        Website Created and Maintained by: Jamila Ali <br>
+        All Rights Reserved.
+      </div>
+
+    </div>
+   </div>
+
+   </div>
+
+   <!-- Provide the links to the JS files --> 
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
