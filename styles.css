@@ -1,0 +1,357 @@
+/* JJ's Pages & Vibes Style Sheet*/
+
+.home-bg{
+    background-image: url("../images/home/bookbackground1.jpg");
+}
+
+.welcome-section h3{
+    font-size: 23pt;
+    font-family: 'Times New Roman', Times, serif;
+    color: #384D6B;
+    margin-bottom: 15px;
+}
+
+.welcome-section p{
+    font-size: 20pt;
+    font-family: 'Times New Roman', Times, serif;
+    color: #C766C7;
+    line-height: 1.6;
+}
+
+.hdrsec{
+    background-color: #00695c;
+    background-position: center center;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hdrlbl{
+    width: 100%;
+}
+
+.hdrlbl p{
+    text-align: center;
+    color: #FB64B6;
+    font-size: 18pt;
+}
+.hdrlbl h1{
+    color: #FB64B6;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace; 
+    font-size: 40pt;
+}
+
+.logopic{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 20;
+}
+
+.logosize{
+    width: 80px;
+    height: 65px;
+}
+
+.pnav{
+    background-color: #00695c;
+    color:#FB64B6;
+    height: 75px;
+}
+
+.pnav a{
+    margin-right: 25px;
+    text-decoration: none;
+}
+
+.pnav a:last-child{
+    margin-right: 0;
+}
+.pnav a:link{
+    color:#886666;
+    text-decoration: none;
+}
+
+.pnav a:hover{
+    color:blue;
+}
+
+/*About Style */
+.about-bg{
+    background-image: url("../images/home/bookbackground.jpg");
+}
+.aboutus p{
+    color: black;
+    font-size: 18pt;
+}
+
+
+/*Service Style */
+.service-bg{
+    background-image: url("../images/home/bookbackground.jpg");
+}
+
+
+/* Service Title */
+.services h4{
+    color: #C766C7;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 23pt;
+    margin-top: 15px;
+}
+
+/* Paragraph Text */
+.services p{
+    color: #7C96A2;
+    font-size: 14pt;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+}
+
+/* Order Style */
+.order-bg{
+    background-image: url("../images/home/bookbackground.jpg");
+}
+
+/* Success Message */
+#message{
+    color:#00695c;
+    font-weight: bold;
+}
+
+/* Contact Style*/
+.contact-bg{
+    background-image: url("../images/home/softbackground.jpg");
+}
+
+/* Resgister Style */
+.register-bg{
+    background-image: url("../images/home/softbackground.jpg");
+}
+
+/* Book-Section Style */
+.book-bg{
+    background-image: url("../images/home/bookbackground.jpg");
+}
+
+.bookcategories{
+    list-style-type: none;
+}
+
+.bookcategories li{
+    font-size: 23px;
+    margin:10px 0;
+}
+
+.bookcategories li::before{
+    font-size: 24pt;
+    content: "🌸 ";
+}
+
+.bookcategories a{
+    text-decoration: none;
+    color: #00695c;
+    font-weight: bold;
+}
+
+.bookcategories a:hover{
+    opacity: 0.5;
+}
+
+#romance{
+    color: #384D6B;
+    font-size: 21pt;
+}
+
+#romance::before{
+     content: "❤️ ";               
+    font-size: 35px; 
+}
+
+#mystery{
+    color:#384D6B;
+    font-size: 21pt;
+}
+
+#mystery::before{
+    content: "🕵️ ";
+    font-size: 35px;
+}
+
+#fiction{
+    color:#384D6B;
+    font-size: 21pt;
+}
+
+#fiction::before{
+    content: "📖 ";
+    font-size: 35px;
+}
+
+#nonfiction{
+    color:#384D6B;
+    font-size: 21pt;
+}
+
+#nonfiction::before{
+    content: "📝 ";
+    font-size: 35px;
+}
+
+#thriller{
+    color:#384D6B;
+    font-size: 21pt;
+}
+
+#thriller::before{
+    content: "⚡ ";
+    font-size: 35px;
+}
+
+#horror{
+    color:#384D6B;
+    font-size: 21pt;
+}
+
+#horror::before{
+    content: "👻 ";
+    font-size: 35px;
+}
+
+#scfi{
+    color:#384D6B;
+    font-size: 21pt;
+}
+
+#scifi::before{
+    content: "🚀 ";
+    font-size: 35px;
+}
+
+#youngadult{
+    color:#384D6B;
+    font-size: 21pt;
+}
+
+#youngadult::before{
+    content: "🌟 ";
+    font-size: 35px;
+}
+
+#fantasy{
+    color:#384D6B;
+    font-size: 21pt;
+}
+
+#fantasy::before{
+    content: "🐉 ";
+    font-size: 35px;
+}
+
+#crime{
+    color:#384D6B;
+    font-size: 21pt;
+}
+
+#crime::before{
+    content: "🔍 ";
+    font-size: 35px;
+}
+
+.bcimg{
+    height: 125px;
+    width: 155px;
+}
+
+.bcimg:hover{
+    opacity: 0.5;
+}
+
+.bpcap{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18pt;
+    color: #142E90;
+}
+
+.bpamt{
+    color: #142E90;
+}
+
+.page-header{
+    color: #384D6B;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 32pt;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+/* Home-Image Style*/
+.mpimg{
+    width: 300px;
+    height:auto;
+    border-radius: 50%;
+}
+
+.fpimg{
+    height: 125px;
+    width: 155px;
+}
+
+.fpimg:hover{
+    opacity: 0.5;
+}
+
+.fpcap{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18pt;
+    color: #2E8FFF;
+}
+
+.fpamt{
+    color: #2E8FFF;
+}
+
+.spcr1{
+    height: 25px;
+}
+
+.spcr2{
+    height: 50px;
+}
+
+.spcr3{
+    height: 75px;
+}
+
+/* Contact us */
+.contact-btn{
+    background-color: #384D6B;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 18px;
+}
+
+.contact-btn:hover{
+    background-color: #2c3e55;
+}
+
+/* Footer Styles */
+.fbg1{
+    border-radius: 3px dotted;
+    background-color: #cb5755;
+    color: black;
+}
+
+.fbg2{
+    border-radius: 2px dotted;
+    background-color: #00695c;
+    font-size: 18pt;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+}
